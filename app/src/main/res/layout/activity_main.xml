@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuditarum.supercontact.MainActivity">
+
+    <TextView
+        android:id="@+id/lblFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="42dp"
+        android:text="First Name"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblFirstName"
+        android:layout_alignStart="@+id/lblFirstName"
+        android:layout_below="@+id/lblFirstName"
+        android:layout_marginTop="37dp"
+        android:text="Last Name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblLastName"
+        android:layout_alignStart="@+id/lblLastName"
+        android:layout_below="@+id/lblLastName"
+        android:layout_marginTop="47dp"
+        android:text="Telephone"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTelephone"
+        android:layout_marginTop="49dp"
+        android:text="Email"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/lblTelephone"
+        android:layout_alignStart="@+id/lblTelephone" />
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblFirstName"
+        android:layout_alignBottom="@+id/lblFirstName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblLastName"
+        android:layout_alignBottom="@+id/lblLastName"
+        android:layout_alignLeft="@+id/txtFirstName"
+        android:layout_alignStart="@+id/txtFirstName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblTelephone"
+        android:layout_alignBottom="@+id/lblTelephone"
+        android:layout_alignLeft="@+id/txtLastName"
+        android:layout_alignStart="@+id/txtLastName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblEmail"
+        android:layout_alignBottom="@+id/lblEmail"
+        android:layout_alignLeft="@+id/txtTelephone"
+        android:layout_alignStart="@+id/txtTelephone"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnAddContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="Add Contact"
+        android:onClick="btnAddContact_onClick"
+        android:layout_below="@+id/txtEmail"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
